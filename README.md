@@ -1,3 +1,3 @@
-# treinamento-git-alura
+# Treinamento-git-alura
 
 Treinamento git
