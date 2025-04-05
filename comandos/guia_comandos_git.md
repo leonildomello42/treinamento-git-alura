@@ -228,4 +228,47 @@ git blame <arquivo>
 ```
 > Mostra quem fez cada alteração em cada linha de um arquivo.
 
+
+# Conflitos:
+
+> Faça um fetch para atualizar as referências do repositório remoto
+
+```bash
+git fetch origin
+```
+
+> Force o pull mantendo suas alterações locais, mas permitindo conflitos
+
+```bash
+git pull --no-rebase
+```
+
+> Alternativamente, se você preferir usar rebase em vez de merge:
+
+```bash
+git pull --rebase
+```
+
+> Adicione os arquivos resolvidos ao staging
+
+```bash
+git add <arquivos-resolvidos>
+```
+
+> ou adicione todos os arquivos
+```bash
+git add .
+```
+> Se estiver usando merge (pull padrão)
+
+```bash
+git commit -m "Resolução de conflitos"
+```
+
+> Se estiver usando rebase
+
+```bash
+git rebase --continue
+```
+
 ---
